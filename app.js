@@ -56,6 +56,8 @@ function managerRole(response) {
         employeeArray.push(manager.appendHTML());
 
         nextEmployee();
+    }).catch(function(err) {
+        console.log(err);
     })
 }
 
@@ -71,6 +73,8 @@ function engineerRole(response) {
         employeeArray.push(engineer.appendHTML());
 
         nextEmployee();
+    }).catch(function(err) {
+        console.log(err);
     })
 }
 
@@ -85,6 +89,8 @@ function internRole(response) {
         employeeArray.push(intern.appendHTML());
 
         nextEmployee();
+    }).catch(function(err) {
+        console.log(err);
     })
 }
 
@@ -101,6 +107,8 @@ function nextEmployee() {
             employee = employeeArray.join("");
             generateHTML()
         }
+    }).catch(function(err) {
+        console.log(err);
     })
 }
 
